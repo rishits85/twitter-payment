@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>TweetBucks</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="D:\Rishit\Web Development\my_portfolio\developer-v1.5\assets\images\projects\FAVICON.png" type="image/x-icon">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css"
+/>
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
+
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <!-- <div class="container">                        -->
+            <h4 style="color:#fff" class = "shrink margin">TweetBucks</h4>
+            <!-- <a class="btn btn-cta-primary pull-right" href="#contact"><i class="fa fa-paper-plane" ></i> Contact Me</a>               -->
+       <!-- </div>//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading text-center">Payment Requests</h2>
+                        <div class="content">
+                          <div class="featured flex">
+                              <img src="profile2.png" class ="grow margin image-responsive">
+                              <div class="grow margin">
+                                <a href="#">Vanessa Mathews</a>
+                                <p><a href="#" id= "twitter-handle">@Venessa</a> has requested $100</p>
+                              </div>
+                        </div><!--//content-->
+                        <div class="content text-center"> <a class="btn btn-cta-primary " href="#contact" style="max-width:250px; margin-top:10px"><i class="fa fa-twitter" ></i> Tweet to pay</a></div>
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="section">
+                    <div class="section-inner">
+                        <h2 class="heading text-center">Tweets</h2>
+                        <hr class="divider" />
+                        <div class="content">    
+                                               
+                            <div class="featured flex">
+                              <img src="profile2.png" class ="grow margin image-responsive">
+                              <div class="grow margin">
+                                <a href="#">Rishit Shah</a>
+                                <p><a href="#" id= "twitter-handle">@Venessa</a> I want to pay you $100</p>
+                                <div class="flex">
+                                <a  class="grow small">Reply </a><a class="grow small margin"> like  </a> <p class="grow small "> Just Now</p>
+                                </div>
+                              </div>
+                            </div><!--//featured-->
+                            <hr class="divider" />
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+                <section class="experience section" id="contact" name="contact">
+                    <div class="section-inner">
+                        <h2 class="heading" >Reqest a Payment</h2>
+                        <div class="content">
+                            <hr class="divider">
+                            <div class="item">
+                                <form name="contactform" method="post" onsubmit="return validateForm()" action="https://formspree.io/rishits85@gmail.com" >
+ 
+                                    <table width="450px">
+                                     
+                                    <tr>
+                                     
+                                     <td valign="top" >
+                                     
+                                      <label for="first_name" class="padded">Name *</label>
+                                     
+                                     </td>
+                                     
+                                     <td valign="top" >
+                                     
+                                      <input type="text" name="first_name" maxlength="50" size="30" class="padded" id="first_name"> 
+                                      
+                                     
+                                     </td>
+                                     
+                                    </tr>
+                                     
+                                    <tr>
+                                     
+                                     <td valign="top">
+                                     
+                                      <label for="email" class="padded">Twitter Handle *</label>
+                                     
+                                     </td>
+                                     
+                                     <td valign="top">
+                                     
+                                      <input  type="text" name="email" maxlength="80" size="30" class="padded" id="email">
+                                     
+                                     </td>
+                                     
+                                    </tr>
+                                     
+                                    <tr>
+                                     
+                                     <td valign="top">
+                                     
+                                      <label for="phone" class="padded">Phone </label>
+                                     
+                                     </td>
+                                     
+                                     <td valign="top">
+                                     
+                                      <input  type="text" name="phone" maxlength="30" size="30" class="padded" id="phone">
+                                     
+                                     </td>
+                                     
+                                    </tr>
+                                     
+                                    <tr>
+                                     
+                                     <td valign="top">
+                                     
+                                      <label for="message" class="padded">Amount in USD *</label>
+                                     
+                                     </td>
+                                     
+                                     <td valign="top">
+                                     
+                                      <input  type="text" name="phone" maxlength="30" size="30" class="padded" id="phone">
+                                     
+                                     </td>
+                                     
+                                    </tr>
+                                     
+                                    <tr>
+            
+                                     <td valign = "top" colspan="2" class="text-center">
+                                     
+                                      <input type="submit" value="Submit" class="btn btn-cta-secondary">   
+                                     
+                                     </td>
+                                     
+                                    </tr>
+                                     
+                                    </table>
+                                    <h4 id="alert" style="color:red" class="padded"></h4>
+ 
+                            
+                            </form> 
+                   
+                            </div><!--//item-->
+                            
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section>
+                         
+            </div><!--//primary-->
+            
+            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+                 <aside class=" aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content flex">
+                          <img src="profile2.png" class="margin" >
+                            <ul class="list-unstyled shrink margin">
+                                <li><a href="#">Rishit Shah</a></li>
+                                <li><a hreft="#">519 Followers</a></li>
+                            <ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+      
+        
+                            
+                <aside class="languages aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Followers</h2>
+                        <div class="content">
+                        <div class="flex">
+                            <img src="profile2.jpg" class=" grow" style="margin:2.5%" >
+                            <img src="profile2.jpg" class=" grow" style="margin:2.5%" >
+                            <img src="profile2.jpg" class="grow"  style="margin:2.5%">
+                            <img src="profile2.jpg" class=" grow" style="margin:2.5%" >
+                            <img src="profile2.jpg" class=" grow" style="margin:2.5%" >
+                        </div>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+              
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript">
+    function validateForm()
+    {
+    var a=document.forms["contactform"]["first_name"].value;
+    var b=document.forms["contactform"]["email"].value;
+    var d=document.forms["contactform"]["message"].value;
+    if (a==null || a=="",b==null || b=="",d==null || d=="")
+      {
+      document.getElementById("alert").innerHTML = "Please fill in all required* fields"
+      return false;
+      }
+    }
+    </script>
+            
+</body>
+</html> 
+
